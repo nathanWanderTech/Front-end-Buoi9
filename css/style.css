@@ -12,10 +12,14 @@ body {
 
 /*Button color*/
 /*Text*/
+/*stars*/
 /*search*/
+/*Border*/
 /*Button color*/
 /*Text*/
+/*stars*/
 /*search*/
+/*Border*/
 #header .header__left .logo {
   flex-grow: 1; }
   #header .header__left .logo img {
@@ -158,5 +162,70 @@ body {
       .intro .intro_content .content_item .content_text h2 {
         font-size: 1.5rem;
         font-weight: bold; }
+
+.course {
+  margin-top: 2rem; }
+  .course .course_left {
+    background: #f2f3f5; }
+    .course .course_left .course__intro {
+      align-self: center;
+      padding-left: 1rem; }
+    @media only screen and (max-width: 992px) {
+      .course .course_left {
+        display: none !important; } }
+  .course .course__content {
+    width: 65% !important; }
+    @media only screen and (max-width: 992px) {
+      .course .course__content {
+        width: 100% !important; } }
+    .course .course__content .content-header {
+      border-bottom: 1px solid #dedfe0; }
+      .course .course__content .content-header .header li:first-child::after {
+        content: "";
+        height: 4px;
+        display: block;
+        background-color: darkblue; }
+      .course .course__content .content-header .header li a {
+        color: #505763;
+        font-weight: bold;
+        font-size: 1.1rem; }
+    .course .course__content .courses-content-items {
+      margin-top: 2rem; }
+      .course .course__content .courses-content-items .content-item:hover {
+        cursor: pointer; }
+      .course .course__content .courses-content-items .content-item h2 {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        color: #29303b;
+        font-weight: bold; }
+      .course .course__content .courses-content-items .content-item .author {
+        color: #505763; }
+      .course .course__content .courses-content-items .content-item .rating-stars i {
+        color: #f4c150; }
+      .course .course__content .courses-content-items .content-item .rating-stars span {
+        color: #505763;
+        font-weight: 900; }
+        .course .course__content .courses-content-items .content-item .rating-stars span span {
+          font-weight: 100; }
+      .course .course__content .courses-content-items .content-item .prices .old-price {
+        text-decoration: line-through; }
+      .course .course__content .courses-content-items .content-item .prices .promo-price {
+        font-size: 1.2rem;
+        font-weight: 900; }
+
+.slick-prev:before,
+.slick-next:before {
+  color: blue;
+  font-size: 2.2rem;
+  margin: auto;
+  display: block;
+  font-weight: bold;
+  border: 1px solid gray;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  line-height: 3.2rem;
+  background-color: solid white !important;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15); }
 
 /*# sourceMappingURL=style.css.map */
