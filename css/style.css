@@ -25,14 +25,8 @@ body {
   color: #505763; }
   #header .header__left .categories i {
     font-size: 1.1rem; }
-    @media only screen and (max-width: 1170px) {
-      #header .header__left .categories i {
-        font-size: 1rem; } }
   #header .header__left .categories span {
     font-size: 1.1rem; }
-    @media only screen and (max-width: 1170px) {
-      #header .header__left .categories span {
-        font-size: 1rem; } }
 #header .header__left .header__search {
   flex-grow: 5;
   background-color: #f2f3f5; }
@@ -55,65 +49,42 @@ body {
     text-align: center;
     color: #ec5252;
     transition: all 0.5s; }
-    @media only screen and (max-width: 1170px) {
-      #header .header__left .header__search i {
-        font-size: 1rem; } }
     #header .header__left .header__search i:hover {
       color: white;
       background-color: #ec5252; }
-@media only screen and (max-width: 1024px) {
-  #header .header__right ul li:first-child {
-    display: none; } }
-@media only screen and (max-width: 768px) {
-  #header .header__right ul li:first-child {
-    display: inline-block; } }
-#header .header__right ul li:first-child:hover {
-  background-color: #f2f3f5; }
-@media only screen and (max-width: 1024px) {
-  #header .header__right ul li:nth-child(2) {
-    display: none; } }
-@media only screen and (max-width: 768px) {
-  #header .header__right ul li:nth-child(2) {
-    display: inline-block; } }
-#header .header__right ul li:nth-child(2):hover {
-  background-color: #f2f3f5; }
-#header .header__right ul li a {
-  font-size: 1.1rem;
-  color: #505763;
-  text-decoration: none; }
-  @media only screen and (max-width: 1170px) {
-    #header .header__right ul li a {
-      font-size: 1rem; } }
-#header .header__right ul li:last-child .btn-log-in {
-  font-size: 1.2rem;
-  padding: 0.9rem 1.1rem;
-  font-weight: 600;
-  border: 1px solid black; }
-  #header .header__right ul li:last-child .btn-log-in:hover {
-    color: black; }
-  @media only screen and (max-width: 1170px) {
-    #header .header__right ul li:last-child .btn-log-in {
-      padding: 0.7rem 0.7rem;
-      font-size: 0.9rem; } }
-  @media only screen and (max-width: 768px) {
-    #header .header__right ul li:last-child .btn-log-in {
+#header .header__right .myNavBar {
+  width: 100% !important;
+  justify-content: space-around !important; }
+  @media only screen and (max-width: 1200px) {
+    #header .header__right .myNavBar li:first-child {
       display: none; } }
-#header .header__right ul li:last-child .btn-sign-up {
-  font-size: 1.2rem;
-  padding: 0.9rem 1.1rem;
-  font-weight: 600;
-  border: 1px solid black;
-  background-color: #ec5252;
-  color: white;
-  border: transparent; }
-  #header .header__right ul li:last-child .btn-sign-up:hover {
-    background-color: #992337; }
-  @media only screen and (max-width: 1170px) {
-    #header .header__right ul li:last-child .btn-sign-up {
-      padding: 0.7rem 0.7rem;
-      font-size: 0.9rem; } }
-  @media only screen and (max-width: 768px) {
-    #header .header__right ul li:last-child .btn-sign-up {
+  #header .header__right .myNavBar li:first-child:hover {
+    background-color: #f2f3f5; }
+  @media only screen and (max-width: 1200px) {
+    #header .header__right .myNavBar li:nth-child(2) {
       display: none; } }
+  #header .header__right .myNavBar li:nth-child(2):hover {
+    background-color: #f2f3f5; }
+  #header .header__right .myNavBar li a {
+    font-size: 1.1rem;
+    color: #505763;
+    text-decoration: none; }
+  #header .header__right .myNavBar li:last-child .btn-log-in {
+    font-size: 1.2rem;
+    padding: 0.9rem 1.1rem;
+    font-weight: 600;
+    border: 1px solid black; }
+    #header .header__right .myNavBar li:last-child .btn-log-in:hover {
+      color: black; }
+  #header .header__right .myNavBar li:last-child .btn-sign-up {
+    font-size: 1.2rem;
+    padding: 0.9rem 1.1rem;
+    font-weight: 600;
+    border: 1px solid black;
+    background-color: #ec5252;
+    color: white;
+    border: transparent; }
+    #header .header__right .myNavBar li:last-child .btn-sign-up:hover {
+      background-color: #992337; }
 
 /*# sourceMappingURL=style.css.map */

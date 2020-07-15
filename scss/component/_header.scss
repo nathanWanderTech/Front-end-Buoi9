@@ -11,15 +11,9 @@
       color: $small-text-color;
       i {
         font-size: $menu-text-size;
-        @include Responsive(XL) {
-          font-size: 1rem;
-        }
       }
       span {
         font-size: $menu-text-size;
-        @include Responsive(XL) {
-          font-size: 1rem;
-        }
       }
     }
     .header__search {
@@ -47,9 +41,7 @@
         text-align: center;
         color: $btn-color;
         transition: all 0.5s;
-        @include Responsive(XL) {
-          font-size: 1rem;
-        }
+
         &:hover {
           color: white;
           background-color: $btn-color;
@@ -58,25 +50,21 @@
     }
   }
   .header__right {
-    ul {
+    .myNavBar {
+      width: 100% !important;
+      justify-content: space-around !important;
       li {
         &:first-child {
-          @include Responsive(MD) {
+          @include Responsive(XL) {
             display: none;
-          }
-          @include Responsive(SM) {
-            display: inline-block;
           }
           &:hover {
             background-color: #f2f3f5;
           }
         }
         &:nth-child(2) {
-          @include Responsive(MD) {
+          @include Responsive(XL) {
             display: none;
-          }
-          @include Responsive(SM) {
-            display: inline-block;
           }
           &:hover {
             background-color: #f2f3f5;
@@ -86,22 +74,12 @@
           font-size: $menu-text-size;
           color: $small-text-color;
           text-decoration: none;
-          @include Responsive(XL) {
-            font-size: 1rem;
-          }
         }
         &:last-child {
           .btn-log-in {
             @include btn-deco;
             &:hover {
               color: black;
-            }
-            @include Responsive(XL) {
-              padding: 0.7rem 0.7rem;
-              font-size: 0.9rem;
-            }
-            @include Responsive(SM) {
-              display: none;
             }
           }
           .btn-sign-up {
@@ -111,13 +89,6 @@
             border: transparent;
             &:hover {
               background-color: $btn-hover-color;
-            }
-            @include Responsive(XL) {
-              padding: 0.7rem 0.7rem;
-              font-size: 0.9rem;
-            }
-            @include Responsive(SM) {
-              display: none;
             }
           }
         }
