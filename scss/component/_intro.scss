@@ -1,0 +1,27 @@
+.intro {
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+  @include Responsive(MD) {
+    display: none;
+  }
+  .intro_content {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem 0;
+    .content_item {
+      display: flex;
+      .intro_icon {
+        font-size: 4.3rem;
+        @include Responsive(XL) {
+          display: none;
+        }
+      }
+      .content_text {
+        h2 {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.myCover {
+  background-image: url(../img/cover.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  .myCover_content {
+    color: white;
+    align-self: center;
+    width: 40%;
+    transform: translateX(-40%);
+    @include Responsive(MD) {
+      width: 100%;
+      transform: translateX(0);
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+      color: gray;
+      font-weight: bold;
+    }
+    .myCover_search {
+      display: flex;
+      @include searchBar;
+      input {
+        width: 95%;
+        &::placeholder {
+          font-size: $btn-font-size;
+        }
+      }
+    }
+  }
+}

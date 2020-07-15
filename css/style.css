@@ -31,13 +31,9 @@ body {
   flex-grow: 5;
   background-color: #f2f3f5; }
   #header .header__left .header__search input {
-    width: 100%;
     padding: 0.5rem 0.5rem;
     border: none;
     background-color: transparent; }
-    #header .header__left .header__search input::placeholder {
-      font-size: 1.1rem;
-      font-weight: 500; }
     #header .header__left .header__search input:focus {
       outline: none; }
   #header .header__left .header__search i {
@@ -52,6 +48,11 @@ body {
     #header .header__left .header__search i:hover {
       color: white;
       background-color: #ec5252; }
+  #header .header__left .header__search input {
+    width: 100%; }
+    #header .header__left .header__search input::placeholder {
+      font-size: 1.1rem;
+      font-weight: 500; }
 #header .header__right .myNavBar {
   width: 100% !important;
   justify-content: space-around !important; }
@@ -86,5 +87,76 @@ body {
     border: transparent; }
     #header .header__right .myNavBar li:last-child .btn-sign-up:hover {
       background-color: #992337; }
+
+.myCover {
+  background-image: url(../img/cover.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: flex; }
+  .myCover .myCover_content {
+    color: white;
+    align-self: center;
+    width: 40%;
+    transform: translateX(-40%); }
+    @media only screen and (max-width: 768px) {
+      .myCover .myCover_content {
+        width: 100%;
+        transform: translateX(0); } }
+    .myCover .myCover_content h1 {
+      font-weight: bold;
+      font-size: 3.5rem; }
+    .myCover .myCover_content p {
+      font-size: 1.5rem;
+      color: gray;
+      font-weight: bold; }
+    .myCover .myCover_content .myCover_search {
+      display: flex;
+      background-color: #f2f3f5; }
+      .myCover .myCover_content .myCover_search input {
+        padding: 0.5rem 0.5rem;
+        border: none;
+        background-color: transparent; }
+        .myCover .myCover_content .myCover_search input:focus {
+          outline: none; }
+      .myCover .myCover_content .myCover_search i {
+        font-size: 1.2rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        line-height: 3.2rem;
+        border: none;
+        text-align: center;
+        color: #ec5252;
+        transition: all 0.5s; }
+        .myCover .myCover_content .myCover_search i:hover {
+          color: white;
+          background-color: #ec5252; }
+      .myCover .myCover_content .myCover_search input {
+        width: 95%; }
+        .myCover .myCover_content .myCover_search input::placeholder {
+          font-size: 1.2rem; }
+
+.intro {
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%); }
+  @media only screen and (max-width: 768px) {
+    .intro {
+      display: none; } }
+  .intro .intro_content {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem 0; }
+    .intro .intro_content .content_item {
+      display: flex; }
+      .intro .intro_content .content_item .intro_icon {
+        font-size: 4.3rem; }
+        @media only screen and (max-width: 1200px) {
+          .intro .intro_content .content_item .intro_icon {
+            display: none; } }
+      .intro .intro_content .content_item .content_text h2 {
+        font-size: 1.5rem;
+        font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

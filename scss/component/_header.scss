@@ -18,33 +18,14 @@
     }
     .header__search {
       flex-grow: 5;
-      background-color: #f2f3f5;
+
+      @include searchBar;
       input {
         width: 100%;
-        padding: 0.5rem 0.5rem;
-        border: none;
-        background-color: transparent;
+
         &::placeholder {
           font-size: 1.1rem;
           font-weight: 500;
-        }
-        &:focus {
-          outline: none;
-        }
-      }
-      i {
-        font-size: 1.2rem;
-        width: 3.2rem;
-        height: 3.2rem;
-        line-height: 3.2rem;
-        border: none;
-        text-align: center;
-        color: $btn-color;
-        transition: all 0.5s;
-
-        &:hover {
-          color: white;
-          background-color: $btn-color;
         }
       }
     }
