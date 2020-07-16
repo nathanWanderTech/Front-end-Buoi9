@@ -1,0 +1,29 @@
+.viewing {
+  margin-top: 3rem;
+  width: 95%;
+  h2 {
+    color: $small-title-color;
+    font-weight: 900;
+  }
+  .viewing-carousel {
+    margin: 0 auto;
+    .viewing-item {
+      @include content-item-hover;
+      .course-image {
+        @include item-img;
+      }
+      h2 {
+        @include h2-title;
+      }
+      .author {
+        @include author;
+      }
+      .rating-stars {
+        @include rating-star;
+      }
+      .prices {
+        @include price;
+      }
+    }
+  }
+}

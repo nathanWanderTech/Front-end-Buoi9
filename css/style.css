@@ -20,6 +20,7 @@ body {
 /*stars*/
 /*search*/
 /*Border*/
+/*Carousel item mixin*/
 #header .header__left .logo {
   flex-grow: 1; }
   #header .header__left .logo img {
@@ -111,11 +112,13 @@ body {
         transform: translateX(0); } }
     .myCover .myCover_content h1 {
       font-weight: bold;
-      font-size: 3.5rem; }
+      font-size: 3.5rem;
+      text-shadow: 2px 2px gray; }
     .myCover .myCover_content p {
       font-size: 1.5rem;
       color: gray;
-      font-weight: bold; }
+      font-weight: bold;
+      text-shadow: 1px 1px black; }
     .myCover .myCover_content .myCover_search {
       display: flex;
       background-color: #f2f3f5; }
@@ -164,7 +167,8 @@ body {
         font-weight: bold; }
 
 .course {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  width: 95%; }
   .course .course_left {
     background: #f2f3f5; }
     .course .course_left .course__intro {
@@ -174,7 +178,7 @@ body {
       .course .course_left {
         display: none !important; } }
   .course .course__content {
-    width: 65% !important; }
+    width: 70% !important; }
     @media only screen and (max-width: 992px) {
       .course .course__content {
         width: 100% !important; } }
@@ -193,6 +197,23 @@ body {
       margin-top: 2rem; }
       .course .course__content .courses-content-items .content-item:hover {
         cursor: pointer; }
+        .course .course__content .courses-content-items .content-item:hover .course-image::after {
+          opacity: 1;
+          transition: all 0.5s ease-in-out; }
+      .course .course__content .courses-content-items .content-item .course-image {
+        position: relative;
+        position: relative; }
+        .course .course__content .courses-content-items .content-item .course-image img {
+          width: 100%; }
+        .course .course__content .courses-content-items .content-item .course-image::after {
+          content: "";
+          height: 100%;
+          width: 100%;
+          background-color: #21252973;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0; }
       .course .course__content .courses-content-items .content-item h2 {
         padding-top: 1rem;
         font-size: 1.2rem;
@@ -213,19 +234,50 @@ body {
         font-size: 1.2rem;
         font-weight: 900; }
 
-.slick-prev:before,
-.slick-next:before {
-  color: blue;
-  font-size: 2.2rem;
-  margin: auto;
-  display: block;
-  font-weight: bold;
-  border: 1px solid gray;
-  width: 3.2rem;
-  height: 3.2rem;
-  border-radius: 50%;
-  line-height: 3.2rem;
-  background-color: solid white !important;
-  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15); }
+.viewing {
+  margin-top: 3rem;
+  width: 95%; }
+  .viewing h2 {
+    color: #29303b;
+    font-weight: 900; }
+  .viewing .viewing-carousel {
+    margin: 0 auto; }
+    .viewing .viewing-carousel .viewing-item:hover {
+      cursor: pointer; }
+      .viewing .viewing-carousel .viewing-item:hover .course-image::after {
+        opacity: 1;
+        transition: all 0.5s ease-in-out; }
+    .viewing .viewing-carousel .viewing-item .course-image {
+      position: relative; }
+      .viewing .viewing-carousel .viewing-item .course-image img {
+        width: 100%; }
+      .viewing .viewing-carousel .viewing-item .course-image::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: #21252973;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; }
+    .viewing .viewing-carousel .viewing-item h2 {
+      padding-top: 1rem;
+      font-size: 1.2rem;
+      color: #29303b;
+      font-weight: bold; }
+    .viewing .viewing-carousel .viewing-item .author {
+      color: #505763; }
+    .viewing .viewing-carousel .viewing-item .rating-stars i {
+      color: #f4c150; }
+    .viewing .viewing-carousel .viewing-item .rating-stars span {
+      color: #505763;
+      font-weight: 900; }
+      .viewing .viewing-carousel .viewing-item .rating-stars span span {
+        font-weight: 100; }
+    .viewing .viewing-carousel .viewing-item .prices .old-price {
+      text-decoration: line-through; }
+    .viewing .viewing-carousel .viewing-item .prices .promo-price {
+      font-size: 1.2rem;
+      font-weight: 900; }
 
 /*# sourceMappingURL=style.css.map */

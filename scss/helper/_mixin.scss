@@ -61,3 +61,68 @@ $XL: 1200px;
     }
   }
 }
+
+/*Carousel item mixin*/
+@mixin content-item-hover {
+  &:hover {
+    cursor: pointer;
+    .course-image {
+      &::after {
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+@mixin item-img {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #21252973;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+
+@mixin h2-title {
+  padding-top: 1rem;
+  font-size: $btn-font-size;
+  color: $small-title-color;
+  font-weight: bold;
+}
+
+@mixin author {
+  color: $small-text-color;
+}
+
+@mixin rating-star {
+  i {
+    color: $star-color;
+  }
+  span {
+    color: $small-text-color;
+    font-weight: 900;
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
+@mixin price {
+  .old-price {
+    text-decoration: line-through;
+  }
+  .promo-price {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+}

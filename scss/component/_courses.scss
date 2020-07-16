@@ -1,5 +1,6 @@
 .course {
   margin-top: 2rem;
+  width: 95%;
   .course_left {
     background: $search-color;
 
@@ -12,7 +13,7 @@
     }
   }
   .course__content {
-    width: 65% !important;
+    width: 70% !important;
     @include Responsive(LG) {
       width: 100% !important;
     }
@@ -38,56 +39,28 @@
     }
     .courses-content-items {
       margin-top: 2rem;
+
       .content-item {
-        &:hover {
-          cursor: pointer;
+        @include content-item-hover;
+
+        .course-image {
+          @include item-img;
+          position: relative;
         }
+
         h2 {
-          padding-top: 1rem;
-          font-size: $btn-font-size;
-          color: $small-title-color;
-          font-weight: bold;
+          @include h2-title;
         }
         .author {
-          color: $small-text-color;
+          @include author;
         }
         .rating-stars {
-          i {
-            color: $star-color;
-          }
-          span {
-            color: $small-text-color;
-            font-weight: 900;
-            span {
-              font-weight: 100;
-            }
-          }
+          @include rating-star;
         }
         .prices {
-          .old-price {
-            text-decoration: line-through;
-          }
-          .promo-price {
-            font-size: 1.2rem;
-            font-weight: 900;
-          }
+          @include price;
         }
       }
     }
   }
-}
-.slick-prev:before,
-.slick-next:before {
-  color: blue;
-  font-size: 2.2rem;
-  margin: auto;
-  display: block;
-  font-weight: bold;
-  border: 1px solid gray;
-  width: 3.2rem;
-  height: 3.2rem;
-  border-radius: 50%;
-  line-height: 3.2rem;
-  background-color: solid white !important;
-  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
 }
