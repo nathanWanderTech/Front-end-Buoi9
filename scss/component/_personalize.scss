@@ -1,0 +1,35 @@
+.personalize {
+  margin-top: 2.5rem;
+  padding-bottom: 4rem;
+  background-color: #29303b;
+  color: white;
+  &::before {
+    content: "";
+    height: 5px;
+    display: block;
+    background: $linear-color;
+  }
+  .row-icon {
+    margin-top: 4rem;
+    i {
+      font-size: 3rem;
+      @include Responsive(LG) {
+        display: none;
+      }
+    }
+
+    .personalize__content {
+      text-align: center;
+      h2 {
+        font-weight: 900;
+      }
+      p {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+      button {
+        @include btn-red-deco;
+      }
+    }
+  }
+}

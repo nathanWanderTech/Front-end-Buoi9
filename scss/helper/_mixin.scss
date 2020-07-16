@@ -6,6 +6,16 @@
   font-weight: 600;
   border: 1px solid black;
 }
+@mixin btn-red-deco {
+  @include btn-deco;
+  background-color: $btn-color;
+  color: white;
+  border: transparent;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+}
 
 // Khai báo kích thước tương ứng với màn hình thiết bị
 

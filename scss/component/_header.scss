@@ -64,13 +64,7 @@
             }
           }
           .btn-sign-up {
-            @include btn-deco;
-            background-color: $btn-color;
-            color: white;
-            border: transparent;
-            &:hover {
-              background-color: $btn-hover-color;
-            }
+            @include btn-red-deco;
           }
         }
       }
